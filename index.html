@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <!-- SETTINGS -->
+        <div id="settings">
+            <button id="gameModeSingle" class="game-button">One Player</button>
+            <button id="gameModeMulti" class="game-button">Two Players</button>
+            <button id="gameRules" class="game-button">Rules</button>
+        </div>
+
+
+        <!-- GAME CONTAINER -->
+        <div id="gameContainer">
+            <h1 id="title">Tic Tac Toe</h1> 
+
+            <div id="scores">
+                <div class="score-item">
+                    <div>Player X</div>
+                    <span id="xWins" class="wins">0</span>
+                </div>
+                <div id="line">|</div>
+                <div class="score-item">
+                    <div>Player O</div>
+                    <span id="oWins" class="wins">0</span>
+                </div>
+            </div>
+
+            <div id="status"></div>
+
+            <table>
+                <tr>
+                    <td class="cell" data-cell="0-0"></td>
+                    <td class="cell" data-cell="0-1"></td>
+                    <td class="cell" data-cell="0-2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-cell="1-0"></td>
+                    <td class="cell" data-cell="1-1"></td>
+                    <td class="cell" data-cell="1-2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" data-cell="2-0"></td>
+                    <td class="cell" data-cell="2-1"></td>
+                    <td class="cell" data-cell="2-2"></td>
+                </tr>
+            </table>
+
+            <button id="resetButton">Reset</button>
+        </div>
+
+        <!-- MODAL -->
+        <div id="gameOverModal" class="hidden">
+            <div class="modal-content">
+                <h2 id="gameMessage"></h2>
+                <div class="modal-buttons">
+                    <button id="playAgain">Play Again</button>
+                    <button id="quit">Quit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACTS -->
+        <div id="contact">
+            <p id="madeBy">Made By:</p>
+            <p id="name">Jessyca Poinssot</p>
+            <p>26 October 2025</p>
+            <br>
+             <div class="links">
+                <a href="mailto:zpoinssot@gmail.com">Email</a> | 
+                <a href="https://github.com/jess-pst">GitHub</a>
+            </div>
+        </div>
+
+
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
